@@ -1,6 +1,6 @@
 # SaliencyCut
 
-Code for "SaliencyCut: Augmenting Plausible Anomalies for Open-set Fine-Grained Anomaly Detection"
+Code for ["SaliencyCut: Augmenting Plausible Anomalies for Open-set Fine-Grained Anomaly Detection"](http://arxiv.org/abs/2306.08366).
 
 # Requirements
 * matplotlib==3.5.1  
@@ -11,6 +11,15 @@ Code for "SaliencyCut: Augmenting Plausible Anomalies for Open-set Fine-Grained 
 * torch==1.9.0  
 * torchvision==0.10.0  
 * tqdm==4.64.0
+
+# Run
+```
+python train.py --dataset_root=./data/mvtec_anomaly_detection --classname='carpet' --nAnomaly=10 --know_class='cut'
+```
+* ```dataset_root``` denotes the path of the dataset.
+* ```classname``` denotes the subset name of the dataset.
+* ```nAnomaly``` denotes the number of anomaly samples involved in training (general setting: 10, hard setting: 1, anomaly-free setting: 0).
+* ```know_class``` (optional) specifies the anomaly category in the training set to evaluate under hard setting.
 
 # Citation
 ```
