@@ -1,6 +1,6 @@
 # SaliencyCut
 
-Code for ["SaliencyCut: Augmenting Plausible Anomalies for Open-set Fine-Grained Anomaly Detection"](http://arxiv.org/abs/2306.08366).
+Code for ["SaliencyCut: Augmenting Plausible Anomalies for Anomaly Detection"](http://arxiv.org/abs/2306.08366).
 
 # Requirements
 * matplotlib==3.5.1  
